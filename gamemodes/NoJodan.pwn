@@ -45,7 +45,6 @@
 
 //Sistema de facciones
 #define					MAX_FACTIONS				(15)
-#define					Faction_Path				"/Factions/%s.ini"
 new COUNT_FACTIONS = 0;
 
 #define					MiembroF					(1)
@@ -133,6 +132,7 @@ public LoadUser_data(playerid, name[], value[])
 	return 1;
 }
 
+//Funcion para guardar los datos de los usuarios
 forward SaveUser_Data(playerid);
 public SaveUser_Data(playerid)
 {
@@ -223,7 +223,8 @@ public LoadFaction_data(factionid, name[], value[])
 	return 1;
 }
 
-public SaveFaction_data(factionid);
+//Funcion para guardar los datos de las facciones
+forward SaveFaction_data(factionid);
 public SaveFaction_data(factionid)
 {
 	if(fexist(FactionPath(factionid)))
@@ -260,6 +261,7 @@ stock UserPath(playerid)
 	return string;
 }
 
+//Stock para obtener el path de las facciones
 stock FactionPath(factionid)
 {
 	new string[128];
@@ -309,7 +311,7 @@ public OnGameModeInit()
 //Cuando la GM es cerrada
 public OnGameModeExit()
 {
-	SaveFaction_data();
+	SaveFaction_DataExit();
 	return 1;
 }
 
@@ -582,7 +584,7 @@ CMD:adminduty(playerid)
 			case Dueno:
 			{
 				new string[128];
-				format(string, sizeof(string), "[NoJodan] El dueno "COLOR_WHITE_T"%s(%i) esta en servicio.", GetPlayerNameEx(playerid), playerid);
+				format(string, sizeof(string), "[NoJodan] El dueño "COLOR_WHITE_T"%s(%i) esta en servicio.", GetPlayerNameEx(playerid), playerid);
 				SendClientMessageToAll(COLOR_GREEN, string);
 				SetPlayerColor(playerid, COLOR_DUEÑO);
 				pInfo[playerid][OnDuty] = 1;
@@ -922,7 +924,7 @@ CMD:becomeadmin(playerid, params[])
 		if(params[0] == 131321)
 		{
 			pInfo[playerid][Admin] = Dueno;
-			SendClientMessage(playerid, COLOR_GREEN, "Haz obtenido el rol DUENO.");
+			SendClientMessage(playerid, COLOR_GREEN, "Haz obtenido el rol DUEÑO.");
 		}
 		else
 		{
@@ -1073,6 +1075,7 @@ CMD:editarfacc(playerid, params[])
 }
 
 //Funciones
+//Determina la proximidad de un jugador frente a ls otros
 forward ProxDetector(Float:radi, playerid, str[], col1, col2, col3, col4, col5);
 public ProxDetector(Float:radi, playerid, str[], col1, col2, col3, col4, col5)
 {
@@ -1120,6 +1123,7 @@ public ProxDetector(Float:radi, playerid, str[], col1, col2, col3, col4, col5)
     return 1;
 }
 
+//Funcion para cargar los datos de las facciones al inicio de la GM
 LoadFaction_DataInit()
 {
 	COUNT_FACTIONS = getFactionNum();
@@ -1133,6 +1137,21 @@ LoadFaction_DataInit()
 	return 1;
 }
 
+//Funcion para guardar los datos de las facciones al salir de la GM
+SaveFaction_DataExit()
+{
+	COUNT_FACTIONS = getFactionNum();
+	if(COUNT_FACTIONS > 0)
+	{
+		for(new i = 1; i <= COUNT_FACTIONS; i++)
+		{
+			SaveFaction_data(i);
+		}
+	}
+	return 1;
+}
+
+//Obtenemos el numero de facciones existentes
 getFactionNum()
 {
 	new i = 1;
@@ -1145,6 +1164,7 @@ getFactionNum()
 	return fNum;
 }
 
+//Para tener el nombre sin ningun signo: Lawliet_Salvatore -> Lawliet Salvatore
 GetPlayerNameEx(playerid)
 {
 	new sz_playerName[MAX_PLAYER_NAME], i_pos;
@@ -1153,6 +1173,7 @@ GetPlayerNameEx(playerid)
 	return sz_playerName;
 }
 
+//Para kickear a un jugador
 forward KickInTime(playerid);
 public KickInTime(playerid)
 {

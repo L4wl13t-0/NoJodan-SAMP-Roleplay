@@ -4632,3 +4632,61 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [18:50:49] [CMD] [Lawliet Salvatore]: /editarfacc 5 paga 100000
 [18:50:59] [CMD] [Lawliet Salvatore]: /editarfacc 3 dinero 100000
 [18:51:22] [part] Lawliet_Salvatore has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[21:16:35] filterscripts = ""  (string)
+[21:16:35] 
+[21:16:35] Server Plugins
+[21:16:35] --------------
+[21:16:35]  Loading plugin: sscanf
+[21:16:35] 
+
+[21:16:35]  ===============================
+
+[21:16:35]       sscanf plugin loaded.     
+
+[21:16:35]          Version:  2.8.3        
+
+[21:16:35]   (c) 2018 Alex "Y_Less" Cole  
+
+[21:16:35]  ===============================
+
+[21:16:35]   Loaded.
+[21:16:35]  Loading plugin: streamer
+[21:16:35] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[21:16:35]   Loaded.
+[21:16:35]  Loaded 2 plugins.
+
+[21:16:35] 
+[21:16:35] Filterscripts
+[21:16:35] ---------------
+[21:16:35]   Loaded 0 filterscripts.
+
+[21:16:35]  
+[21:16:35]  
+[21:16:35]  
+[21:16:35]  ======================================= 
+[21:16:35]  |                                     | 
+[21:16:35]  |        YSI version 3.09.0684        | 
+[21:16:35]  |        By Alex "Y_Less" Cole        | 
+[21:16:35]  |                                     | 
+[21:16:35]  ======================================= 
+[21:16:35]  
+[21:16:35]  
+[21:16:35]  
+[21:16:35] 
+----------------------------------
+[21:16:35]  Iniciando GM test de Roleplay.
+[21:16:35] ----------------------------------
+
+[21:16:35] Number of vehicle models: 0
