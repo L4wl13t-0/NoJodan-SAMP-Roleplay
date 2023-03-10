@@ -46,6 +46,18 @@ public ProxDetector(Float:radi, playerid, str[], col1, col2, col3, col4, col5)
     return 1;
 }
 
+forward ProxDetector(Float:radi, playerid, targetid);
+public ProxDetectorS(Float:radi, playerid, targetid)
+{
+	new Float: fp_playerPos[3];
+	GetPlayerPos(targetid, fp_playerPos[0], fp_playerPos[1], fp_playerPos[2]);
+	if(IsPlayerInRangeOfPoint(playerid, radi, fp_playerPos[0], fp_playerPos[1], fp_playerPos[2]) && GetPlayerVirtualWorld(playerid) == GetPlayerVirtualWorld(targetid))
+	{
+		return 1;
+	}
+	return 0;
+}
+
 //Funcion para cargar los datos de las facciones al inicio de la GM
 LoadFaction_DataInit()
 {

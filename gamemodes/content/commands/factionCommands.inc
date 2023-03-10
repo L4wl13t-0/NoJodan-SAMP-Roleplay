@@ -1,6 +1,6 @@
 CMD:crearfacc(playerid, params[])
 {
-	if(pInfo[playerid][Admin] > 2 && pInfo[playerid][OnDuty] == 1)
+	if(pInfo[playerid][Admin] > Moderador && pInfo[playerid][OnDuty] == 1)
     {
 		if(isnull(params)) return SendClientMessage(playerid, COLOR_WHITE, "Utiliza: /crearfacc <Nombre Faccion>");
 
@@ -65,7 +65,7 @@ CMD:facciones(playerid)
 
 CMD:darfacc(playerid, params[])
 {
-	if(pInfo[playerid][Admin] > 2 && pInfo[playerid][OnDuty] == 1)
+	if(pInfo[playerid][Admin] > Moderador && pInfo[playerid][OnDuty] == 1)
     {
         if(!sscanf(params, "dd", params[0], params[1]))
         {
@@ -97,7 +97,7 @@ CMD:darfacc(playerid, params[])
 
 CMD:editarfacc(playerid, params[])
 {
-	if(pInfo[playerid][Admin] > 2 && pInfo[playerid][OnDuty] == 1)
+	if(pInfo[playerid][Admin] > Moderador && pInfo[playerid][OnDuty] == 1)
     {
 		new option[64];
         if(!sscanf(params, "ds[64]d", params[0], option, params[2]))
@@ -131,4 +131,13 @@ CMD:editarfacc(playerid, params[])
         SendClientMessage(playerid, COLOR_RED, "No estas en modo administrador o no tienes permisos para esto.");
     }
     return 1;
+}
+
+CMD:contratar(playerid, params[])
+{
+	if(pInfo[playerid][FactionRol] > CaptainF)
+	{
+		//
+	}
+	return 1;
 }

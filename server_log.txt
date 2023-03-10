@@ -5223,3 +5223,68 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [02:24:37] [CMD] [Lawliet Salvatore]: /elevar 0
 [02:24:39] [CMD] [Lawliet Salvatore]: /adminoffduty
 [02:24:50] [part] Lawliet_Salvatore has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[09:46:35] filterscripts = ""  (string)
+[09:46:35] 
+[09:46:35] Server Plugins
+[09:46:35] --------------
+[09:46:35]  Loading plugin: sscanf
+[09:46:35] 
+
+[09:46:35]  ===============================
+
+[09:46:35]       sscanf plugin loaded.     
+
+[09:46:35]          Version:  2.8.3        
+
+[09:46:35]   (c) 2018 Alex "Y_Less" Cole  
+
+[09:46:35]  ===============================
+
+[09:46:35]   Loaded.
+[09:46:35]  Loading plugin: streamer
+[09:46:35] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[09:46:35]   Loaded.
+[09:46:35]  Loaded 2 plugins.
+
+[09:46:35] 
+[09:46:35] Filterscripts
+[09:46:35] ---------------
+[09:46:35]   Loaded 0 filterscripts.
+
+[09:46:35]  
+[09:46:35]  
+[09:46:35]  
+[09:46:35]  ======================================= 
+[09:46:35]  |                                     | 
+[09:46:35]  |        YSI version 3.09.0684        | 
+[09:46:35]  |        By Alex "Y_Less" Cole        | 
+[09:46:35]  |                                     | 
+[09:46:35]  ======================================= 
+[09:46:35]  
+[09:46:35]  
+[09:46:35]  
+[09:46:35] 
+----------------------------------
+[09:46:35]  Iniciando GM test de Roleplay.
+[09:46:35] ----------------------------------
+
+[09:46:35] Number of vehicle models: 0
+[09:47:03] [connection] 127.0.0.1:51694 requests connection cookie.
+[09:47:04] [connection] incoming connection: 127.0.0.1:51694 id: 0
+[09:47:04] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[09:47:10] [CMD] [Lawliet Salvatore]: /adminduty
+[09:47:13] [CMD] [Lawliet Salvatore]: /facciones
+[09:47:22] [CMD] [Lawliet Salvatore]: /editarfacc 1 dinero 0
+[09:47:25] [part] Lawliet_Salvatore has left the server (0:1)

@@ -148,7 +148,7 @@ CMD:adminoffduty(playerid)
 
 CMD:tp(playerid, params[])
 {
-    if(pInfo[playerid][Admin] > 1 && pInfo[playerid][OnDuty] == 1)
+    if(pInfo[playerid][Admin] >= Moderador && pInfo[playerid][OnDuty] == 1)
     {
         if(!sscanf(params, "d", params[0]))
         {
@@ -179,7 +179,7 @@ CMD:tp(playerid, params[])
 
 CMD:traer(playerid, params[])
 {
-    if(pInfo[playerid][Admin] > 1 && pInfo[playerid][OnDuty] == 1)
+    if(pInfo[playerid][Admin] >= Moderador && pInfo[playerid][OnDuty] == 1)
     {
         if(!sscanf(params, "d", params[0]))
         {
@@ -210,7 +210,7 @@ CMD:traer(playerid, params[])
 
 CMD:mandarpos(playerid, params[])
 {
-	if(pInfo[playerid][Admin] > 1 && pInfo[playerid][OnDuty] == 1)
+	if(pInfo[playerid][Admin] >= Moderador && pInfo[playerid][OnDuty] == 1)
 	{
 		if(!sscanf(params, "dfff", params[0], params[1], params[2], params[3]))
 		{
@@ -240,7 +240,7 @@ CMD:mandarpos(playerid, params[])
 
 CMD:elevar(playerid, params[])
 {
-    if(pInfo[playerid][Admin] > 3 && pInfo[playerid][OnDuty] == 1)
+    if(pInfo[playerid][Admin] >= Programador && pInfo[playerid][OnDuty] == 1)
     {
         if(!sscanf(params, "d", params[0]))
         {
@@ -271,7 +271,7 @@ CMD:elevar(playerid, params[])
 
 CMD:dararma(playerid, params[])
 {
-    if(pInfo[playerid][Admin] > 1 && pInfo[playerid][OnDuty] == 1)
+    if(pInfo[playerid][Admin] >= Moderador && pInfo[playerid][OnDuty] == 1)
     {
         if(!sscanf(params, "ddd", params[0], params[1], params[2]))
         {
@@ -301,7 +301,7 @@ CMD:dararma(playerid, params[])
 
 CMD:borrararmas(playerid, params[])
 {
-    if(pInfo[playerid][Admin] > 2 && pInfo[playerid][OnDuty] == 1)
+    if(pInfo[playerid][Admin] >= Administrador && pInfo[playerid][OnDuty] == 1)
     {
         if(!sscanf(params, "d", params[0]))
         {
@@ -331,7 +331,7 @@ CMD:borrararmas(playerid, params[])
 
 CMD:darvida(playerid, params[])
 {
-	if(pInfo[playerid][Admin] > 1 && pInfo[playerid][OnDuty] == 1)
+	if(pInfo[playerid][Admin] >= Moderador && pInfo[playerid][OnDuty] == 1)
     {
         if(!sscanf(params, "d", params[0]))
         {
@@ -361,7 +361,7 @@ CMD:darvida(playerid, params[])
 
 CMD:darchaleco(playerid, params[])
 {
-	if(pInfo[playerid][Admin] > 1 && pInfo[playerid][OnDuty] == 1)
+	if(pInfo[playerid][Admin] >= Moderador && pInfo[playerid][OnDuty] == 1)
     {
         if(!sscanf(params, "d", params[0]))
         {
@@ -391,7 +391,7 @@ CMD:darchaleco(playerid, params[])
 
 CMD:inmortal(playerid)
 {
-	if(pInfo[playerid][Admin] > 1 && pInfo[playerid][OnDuty] == 1)
+	if(pInfo[playerid][Admin] >= Moderador && pInfo[playerid][OnDuty] == 1)
     {
 		new string[128];
         SetPlayerHealth(playerid, 1000);
