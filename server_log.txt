@@ -4690,3 +4690,536 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [21:16:35] ----------------------------------
 
 [21:16:35] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:29:40] filterscripts = ""  (string)
+[01:29:40] 
+[01:29:40] Server Plugins
+[01:29:40] --------------
+[01:29:40]  Loading plugin: sscanf
+[01:29:40] 
+
+[01:29:40]  ===============================
+
+[01:29:40]       sscanf plugin loaded.     
+
+[01:29:40]          Version:  2.8.3        
+
+[01:29:40]   (c) 2018 Alex "Y_Less" Cole  
+
+[01:29:40]  ===============================
+
+[01:29:40]   Loaded.
+[01:29:40]  Loading plugin: streamer
+[01:29:40] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[01:29:40]   Loaded.
+[01:29:40]  Loaded 2 plugins.
+
+[01:29:40] 
+[01:29:40] Filterscripts
+[01:29:40] ---------------
+[01:29:40]   Loaded 0 filterscripts.
+
+[01:29:40]  
+[01:29:40]  
+[01:29:40]  
+[01:29:40]  ======================================= 
+[01:29:40]  |                                     | 
+[01:29:40]  |        YSI version 3.09.0684        | 
+[01:29:40]  |        By Alex "Y_Less" Cole        | 
+[01:29:40]  |                                     | 
+[01:29:40]  ======================================= 
+[01:29:40]  
+[01:29:40]  
+[01:29:40]  
+[01:29:40] 
+----------------------------------
+[01:29:40]  Iniciando GM test de Roleplay.
+[01:29:40] ----------------------------------
+
+[01:29:40] Number of vehicle models: 0
+[01:29:58] [connection] 127.0.0.1:59716 requests connection cookie.
+[01:29:59] [connection] incoming connection: 127.0.0.1:59716 id: 0
+[01:29:59] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[01:30:06] [CMD] [Lawliet Salvatore]: /adminduty
+[01:30:07] [part] Lawliet_Salvatore has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:36:08] filterscripts = ""  (string)
+[01:36:08] 
+[01:36:08] Server Plugins
+[01:36:08] --------------
+[01:36:08]  Loading plugin: sscanf
+[01:36:08] 
+
+[01:36:08]  ===============================
+
+[01:36:08]       sscanf plugin loaded.     
+
+[01:36:08]          Version:  2.8.3        
+
+[01:36:08]   (c) 2018 Alex "Y_Less" Cole  
+
+[01:36:08]  ===============================
+
+[01:36:08]   Loaded.
+[01:36:08]  Loading plugin: streamer
+[01:36:08] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[01:36:08]   Loaded.
+[01:36:08]  Loaded 2 plugins.
+
+[01:36:08] 
+[01:36:08] Filterscripts
+[01:36:08] ---------------
+[01:36:08]   Loaded 0 filterscripts.
+
+[01:36:08]  
+[01:36:08]  
+[01:36:08]  
+[01:36:08]  ======================================= 
+[01:36:08]  |                                     | 
+[01:36:08]  |        YSI version 3.09.0684        | 
+[01:36:08]  |        By Alex "Y_Less" Cole        | 
+[01:36:08]  |                                     | 
+[01:36:08]  ======================================= 
+[01:36:08]  
+[01:36:08]  
+[01:36:08]  
+[01:36:08] 
+----------------------------------
+[01:36:08]  Iniciando GM test de Roleplay.
+[01:36:08] ----------------------------------
+
+[01:36:08] Number of vehicle models: 0
+[01:36:27] [connection] 127.0.0.1:60970 requests connection cookie.
+[01:36:28] [connection] incoming connection: 127.0.0.1:60970 id: 0
+[01:36:28] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[01:36:34] [part] Lawliet_Salvatore has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:45:44] filterscripts = ""  (string)
+[01:45:44] 
+[01:45:44] Server Plugins
+[01:45:44] --------------
+[01:45:44]  Loading plugin: sscanf
+[01:45:44] 
+
+[01:45:44]  ===============================
+
+[01:45:44]       sscanf plugin loaded.     
+
+[01:45:44]          Version:  2.8.3        
+
+[01:45:44]   (c) 2018 Alex "Y_Less" Cole  
+
+[01:45:44]  ===============================
+
+[01:45:44]   Loaded.
+[01:45:44]  Loading plugin: streamer
+[01:45:44] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[01:45:44]   Loaded.
+[01:45:44]  Loaded 2 plugins.
+
+[01:45:44] 
+[01:45:44] Filterscripts
+[01:45:44] ---------------
+[01:45:44]   Loaded 0 filterscripts.
+
+[01:45:44]  
+[01:45:44]  
+[01:45:44]  
+[01:45:44]  ======================================= 
+[01:45:44]  |                                     | 
+[01:45:44]  |        YSI version 3.09.0684        | 
+[01:45:44]  |        By Alex "Y_Less" Cole        | 
+[01:45:44]  |                                     | 
+[01:45:44]  ======================================= 
+[01:45:44]  
+[01:45:44]  
+[01:45:44]  
+[01:45:44] 
+----------------------------------
+[01:45:44]  Iniciando GM test de Roleplay.
+[01:45:44] ----------------------------------
+
+[01:45:44] Number of vehicle models: 0
+[01:46:04] [connection] 127.0.0.1:52809 requests connection cookie.
+[01:46:05] [connection] incoming connection: 127.0.0.1:52809 id: 0
+[01:46:05] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[01:46:13] [CMD] [Lawliet Salvatore]: /g Hola
+[01:46:16] [CMD] [Lawliet Salvatore]: /me xd
+[01:46:21] [CMD] [Lawliet Salvatore]: /adminduty
+[01:46:33] [CMD] [Lawliet Salvatore]: /inmortal
+[01:46:41] [CMD] [Lawliet Salvatore]: /elevar 0
+[01:46:45] [part] Lawliet_Salvatore has left the server (0:1)
+[01:47:04] [connection] 127.0.0.1:49339 requests connection cookie.
+[01:47:05] [connection] incoming connection: 127.0.0.1:49339 id: 0
+[01:47:05] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[01:47:11] [CMD] [Lawliet Salvatore]: /facciones
+[01:47:14] [CMD] [Lawliet Salvatore]: /adminduty
+[01:47:21] [CMD] [Lawliet Salvatore]: /crearfacc LSPD
+[01:47:21] *** YSI Error: INI_Open could not find or create file /Factions/1.ini
+[01:47:23] [CMD] [Lawliet Salvatore]: /facciones
+[01:48:17] [CMD] [Lawliet Salvatore]: /crearfacc NAO
+[01:48:19] [CMD] [Lawliet Salvatore]: /facciones
+[01:48:34] [CMD] [Lawliet Salvatore]: /darfacc
+[01:48:39] [CMD] [Lawliet Salvatore]: /darfacc 0 2
+[01:48:43] [CMD] [Lawliet Salvatore]: /facciones
+[01:49:02] [CMD] [Lawliet Salvatore]: /editarfacc 1 dinero 0
+[01:49:13] [CMD] [Lawliet Salvatore]: /editarfacc 1 dinero 0
+[01:49:19] [CMD] [Lawliet Salvatore]: /editarfacc 2 dinero 0
+[01:49:31] [part] Lawliet_Salvatore has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:00:19] filterscripts = ""  (string)
+[02:00:19] 
+[02:00:19] Server Plugins
+[02:00:19] --------------
+[02:00:19]  Loading plugin: sscanf
+[02:00:19] 
+
+[02:00:19]  ===============================
+
+[02:00:19]       sscanf plugin loaded.     
+
+[02:00:19]          Version:  2.8.3        
+
+[02:00:19]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:00:19]  ===============================
+
+[02:00:19]   Loaded.
+[02:00:19]  Loading plugin: streamer
+[02:00:19] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[02:00:19]   Loaded.
+[02:00:19]  Loaded 2 plugins.
+
+[02:00:19] 
+[02:00:19] Filterscripts
+[02:00:19] ---------------
+[02:00:19]   Loaded 0 filterscripts.
+
+[02:00:19]  
+[02:00:19]  
+[02:00:19]  
+[02:00:19]  ======================================= 
+[02:00:19]  |                                     | 
+[02:00:19]  |        YSI version 3.09.0684        | 
+[02:00:19]  |        By Alex "Y_Less" Cole        | 
+[02:00:19]  |                                     | 
+[02:00:19]  ======================================= 
+[02:00:19]  
+[02:00:19]  
+[02:00:19]  
+[02:00:19] 
+----------------------------------
+[02:00:19]  Iniciando GM test de Roleplay.
+[02:00:19] ----------------------------------
+
+[02:00:19] Number of vehicle models: 0
+[02:00:41] [connection] 127.0.0.1:49725 requests connection cookie.
+[02:00:42] [connection] incoming connection: 127.0.0.1:49725 id: 0
+[02:00:42] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[02:00:49] [CMD] [Lawliet Salvatore]: /adminduty
+[02:00:53] [CMD] [Lawliet Salvatore]: /inmortal
+[02:00:57] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:01:13] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:01:16] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:01:19] [CMD] [Lawliet Salvatore]: /adminduty
+[02:01:21] [CMD] [Lawliet Salvatore]: /facciones
+[02:01:35] [CMD] [Lawliet Salvatore]: /crearfacc NoJodan Facc
+[02:01:40] [CMD] [Lawliet Salvatore]: /facciones
+[02:01:49] [CMD] [Lawliet Salvatore]: /darfacc 0 1
+[02:01:51] [CMD] [Lawliet Salvatore]: /facciones
+[02:02:01] [CMD] [Lawliet Salvatore]: /me
+[02:02:05] [CMD] [Lawliet Salvatore]: /me a
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:06:14] filterscripts = ""  (string)
+[02:06:14] 
+[02:06:14] Server Plugins
+[02:06:14] --------------
+[02:06:14]  Loading plugin: sscanf
+[02:06:14] 
+
+[02:06:14]  ===============================
+
+[02:06:14]       sscanf plugin loaded.     
+
+[02:06:14]          Version:  2.8.3        
+
+[02:06:14]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:06:14]  ===============================
+
+[02:06:14]   Loaded.
+[02:06:14]  Loading plugin: streamer
+[02:06:14] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[02:06:14]   Loaded.
+[02:06:14]  Loaded 2 plugins.
+
+[02:06:14] 
+[02:06:14] Filterscripts
+[02:06:14] ---------------
+[02:06:14]   Loaded 0 filterscripts.
+
+[02:06:14]  
+[02:06:14]  
+[02:06:14]  
+[02:06:14]  ======================================= 
+[02:06:14]  |                                     | 
+[02:06:14]  |        YSI version 3.09.0684        | 
+[02:06:14]  |        By Alex "Y_Less" Cole        | 
+[02:06:14]  |                                     | 
+[02:06:14]  ======================================= 
+[02:06:14]  
+[02:06:14]  
+[02:06:14]  
+[02:06:14] 
+----------------------------------
+[02:06:14]  Iniciando GM test de Roleplay.
+[02:06:14] ----------------------------------
+
+[02:06:14] Number of vehicle models: 0
+[02:06:20] [connection] 127.0.0.1:62973 requests connection cookie.
+[02:06:21] [connection] incoming connection: 127.0.0.1:62973 id: 0
+[02:06:21] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[02:06:28] [CMD] [Lawliet Salvatore]: /me grita
+[02:06:32] [CMD] [Lawliet Salvatore]: /do a
+[02:06:34] [CMD] [Lawliet Salvatore]: /e asd
+[02:06:49] [CMD] [Lawliet Salvatore]: /adminduty
+[02:06:54] [CMD] [Lawliet Salvatore]: /inmortal
+[02:06:58] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:06:59] [part] Lawliet_Salvatore has left the server (0:1)
+[02:07:20] [connection] 127.0.0.1:49611 requests connection cookie.
+[02:07:21] [connection] incoming connection: 127.0.0.1:49611 id: 0
+[02:07:22] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[02:08:54] [CMD] [Lawliet Salvatore]: /adminduty
+[02:08:57] [CMD] [Lawliet Salvatore]: /inmortal
+[02:09:34] [part] Lawliet_Salvatore has left the server (0:1)
+[02:09:53] [connection] 127.0.0.1:54898 requests connection cookie.
+[02:09:54] [connection] incoming connection: 127.0.0.1:54898 id: 0
+[02:09:54] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[02:10:05] [CMD] [Lawliet Salvatore]: /adminduty
+[02:10:12] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:10:13] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:10:14] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:10:14] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:10:15] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:10:16] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:10:24] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:10:25] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:10:44] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:10:50] [CMD] [Lawliet Salvatore]: /adminduty
+[02:10:52] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:11:00] [CMD] [Lawliet Salvatore]: /darvida 0
+[02:11:04] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:11:15] [part] Lawliet_Salvatore has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:18:09] filterscripts = ""  (string)
+[02:18:09] 
+[02:18:09] Server Plugins
+[02:18:09] --------------
+[02:18:09]  Loading plugin: sscanf
+[02:18:09] 
+
+[02:18:09]  ===============================
+
+[02:18:09]       sscanf plugin loaded.     
+
+[02:18:09]          Version:  2.8.3        
+
+[02:18:09]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:18:09]  ===============================
+
+[02:18:09]   Loaded.
+[02:18:09]  Loading plugin: streamer
+[02:18:09] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[02:18:09]   Loaded.
+[02:18:09]  Loaded 2 plugins.
+
+[02:18:09] 
+[02:18:09] Filterscripts
+[02:18:09] ---------------
+[02:18:09]   Loaded 0 filterscripts.
+
+[02:18:09]  
+[02:18:09]  
+[02:18:09]  
+[02:18:09]  ======================================= 
+[02:18:09]  |                                     | 
+[02:18:09]  |        YSI version 3.09.0684        | 
+[02:18:09]  |        By Alex "Y_Less" Cole        | 
+[02:18:09]  |                                     | 
+[02:18:09]  ======================================= 
+[02:18:09]  
+[02:18:09]  
+[02:18:09]  
+[02:18:09] 
+----------------------------------
+[02:18:09]  Iniciando GM test de Roleplay.
+[02:18:09] ----------------------------------
+
+[02:18:09] Number of vehicle models: 0
+[02:18:28] [connection] 127.0.0.1:50429 requests connection cookie.
+[02:18:29] [connection] incoming connection: 127.0.0.1:50429 id: 0
+[02:18:29] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[02:19:21] [CMD] [Lawliet Salvatore]: /adminduty
+[02:19:28] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:19:34] [CMD] [Lawliet Salvatore]: /adminduty
+[02:19:37] [CMD] [Lawliet Salvatore]: /inmortal
+[02:19:43] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:20:29] [CMD] [Lawliet Salvatore]: /adminduty
+[02:20:33] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:20:35] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:20:43] [CMD] [Lawliet Salvatore]: /adminduty
+[02:20:47] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:20:50] [CMD] [Lawliet Salvatore]: /adminduty
+[02:20:50] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:20:59] [CMD] [Lawliet Salvatore]: /adminduty
+[02:21:04] [CMD] [Lawliet Salvatore]: /inmortal
+[02:21:07] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:21:09] [part] Lawliet_Salvatore has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:21:34] filterscripts = ""  (string)
+[02:21:34] 
+[02:21:34] Server Plugins
+[02:21:34] --------------
+[02:21:34]  Loading plugin: sscanf
+[02:21:34] 
+
+[02:21:34]  ===============================
+
+[02:21:34]       sscanf plugin loaded.     
+
+[02:21:34]          Version:  2.8.3        
+
+[02:21:34]   (c) 2018 Alex "Y_Less" Cole  
+
+[02:21:34]  ===============================
+
+[02:21:34]   Loaded.
+[02:21:34]  Loading plugin: streamer
+[02:21:34] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[02:21:34]   Loaded.
+[02:21:34]  Loaded 2 plugins.
+
+[02:21:34] 
+[02:21:34] Filterscripts
+[02:21:34] ---------------
+[02:21:34]   Loaded 0 filterscripts.
+
+[02:21:34]  
+[02:21:34]  
+[02:21:34]  
+[02:21:34]  ======================================= 
+[02:21:34]  |                                     | 
+[02:21:34]  |        YSI version 3.09.0684        | 
+[02:21:34]  |        By Alex "Y_Less" Cole        | 
+[02:21:34]  |                                     | 
+[02:21:34]  ======================================= 
+[02:21:34]  
+[02:21:34]  
+[02:21:34]  
+[02:21:34] 
+----------------------------------
+[02:21:34]  Iniciando GM test de Roleplay.
+[02:21:34] ----------------------------------
+
+[02:21:34] Number of vehicle models: 0
+[02:21:51] [connection] 127.0.0.1:59835 requests connection cookie.
+[02:21:52] [connection] incoming connection: 127.0.0.1:59835 id: 0
+[02:21:53] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[02:21:57] [CMD] [Lawliet Salvatore]: /adminduty
+[02:22:04] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:22:10] [CMD] [Lawliet Salvatore]: /adminduty
+[02:22:15] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:22:16] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:22:46] [CMD] [Lawliet Salvatore]: /adminduty
+[02:22:49] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:22:51] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:22:57] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:23:00] [CMD] [Lawliet Salvatore]: /adminduty
+[02:23:31] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:24:12] [CMD] [Lawliet Salvatore]: /adminduty
+[02:24:15] [CMD] [Lawliet Salvatore]: /inmortal
+[02:24:18] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:24:32] [CMD] [Lawliet Salvatore]: /adminduty
+[02:24:35] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:24:36] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:24:37] [CMD] [Lawliet Salvatore]: /elevar 0
+[02:24:39] [CMD] [Lawliet Salvatore]: /adminoffduty
+[02:24:50] [part] Lawliet_Salvatore has left the server (0:1)
