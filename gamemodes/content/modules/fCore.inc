@@ -46,7 +46,7 @@ public ProxDetector(Float:radi, playerid, str[], col1, col2, col3, col4, col5)
     return 1;
 }
 
-forward ProxDetector(Float:radi, playerid, targetid);
+forward ProxDetectorS(Float:radi, playerid, targetid);
 public ProxDetectorS(Float:radi, playerid, targetid)
 {
 	new Float: fp_playerPos[3];

@@ -22,6 +22,7 @@ enum PlayerData
 	TriesL,
 	TriesR,
 	Faction,
-	FactionRol
+	FactionRol,
+	fInvite
 };
 new pInfo[MAX_PLAYERS][PlayerData];

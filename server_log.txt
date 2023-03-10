@@ -5288,3 +5288,158 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [09:47:13] [CMD] [Lawliet Salvatore]: /facciones
 [09:47:22] [CMD] [Lawliet Salvatore]: /editarfacc 1 dinero 0
 [09:47:25] [part] Lawliet_Salvatore has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:29:44] filterscripts = ""  (string)
+[12:29:44] 
+[12:29:44] Server Plugins
+[12:29:44] --------------
+[12:29:44]  Loading plugin: sscanf
+[12:29:44] 
+
+[12:29:44]  ===============================
+
+[12:29:44]       sscanf plugin loaded.     
+
+[12:29:44]          Version:  2.8.3        
+
+[12:29:44]   (c) 2018 Alex "Y_Less" Cole  
+
+[12:29:44]  ===============================
+
+[12:29:44]   Loaded.
+[12:29:44]  Loading plugin: streamer
+[12:29:44] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[12:29:44]   Loaded.
+[12:29:44]  Loaded 2 plugins.
+
+[12:29:44] 
+[12:29:44] Filterscripts
+[12:29:44] ---------------
+[12:29:44]   Loaded 0 filterscripts.
+
+[12:29:44]  
+[12:29:44]  
+[12:29:44]  
+[12:29:44]  ======================================= 
+[12:29:44]  |                                     | 
+[12:29:44]  |        YSI version 3.09.0684        | 
+[12:29:44]  |        By Alex "Y_Less" Cole        | 
+[12:29:44]  |                                     | 
+[12:29:44]  ======================================= 
+[12:29:44]  
+[12:29:44]  
+[12:29:44]  
+[12:29:44] 
+----------------------------------
+[12:29:44]  Iniciando GM test de Roleplay.
+[12:29:44] ----------------------------------
+
+[12:29:44] Number of vehicle models: 0
+[12:30:02] [connection] 127.0.0.1:64006 requests connection cookie.
+[12:30:03] [connection] incoming connection: 127.0.0.1:64006 id: 0
+[12:30:04] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[12:30:10] [CMD] [Lawliet Salvatore]: /facciones
+[12:30:16] [CMD] [Lawliet Salvatore]: /adminduty
+[12:30:24] [CMD] [Lawliet Salvatore]: /crearfacc NOJODAN FACC
+[12:30:28] [CMD] [Lawliet Salvatore]: /facciones
+[12:30:40] [CMD] [Lawliet Salvatore]: /darfacc 0 1
+[12:30:46] [CMD] [Lawliet Salvatore]: /facciones
+[12:30:51] [CMD] [Lawliet Salvatore]: /contratar 0
+[12:41:47] [connection] 192.168.0.15:49772 requests connection cookie.
+[12:41:48] [connection] incoming connection: 192.168.0.15:49772 id: 1
+[12:41:48] [join] Rosa_Rodwood has joined the server (1:192.168.0.15)
+[12:42:13] [CMD] [Rosa Rodwood]: /tp 0
+[12:42:25] [CMD] [Lawliet Salvatore]: /ir 1
+[12:42:31] [CMD] [Lawliet Salvatore]: /tp 1
+[12:42:43] [CMD] [Lawliet Salvatore]: /contratar 1
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:45:24] filterscripts = ""  (string)
+[12:45:24] 
+[12:45:24] Server Plugins
+[12:45:24] --------------
+[12:45:24]  Loading plugin: sscanf
+[12:45:24] 
+
+[12:45:24]  ===============================
+
+[12:45:24]       sscanf plugin loaded.     
+
+[12:45:24]          Version:  2.8.3        
+
+[12:45:24]   (c) 2018 Alex "Y_Less" Cole  
+
+[12:45:24]  ===============================
+
+[12:45:24]   Loaded.
+[12:45:24]  Loading plugin: streamer
+[12:45:24] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[12:45:24]   Loaded.
+[12:45:24]  Loaded 2 plugins.
+
+[12:45:24] 
+[12:45:24] Filterscripts
+[12:45:24] ---------------
+[12:45:24]   Loaded 0 filterscripts.
+
+[12:45:24]  
+[12:45:24]  
+[12:45:24]  
+[12:45:24]  ======================================= 
+[12:45:24]  |                                     | 
+[12:45:24]  |        YSI version 3.09.0684        | 
+[12:45:24]  |        By Alex "Y_Less" Cole        | 
+[12:45:24]  |                                     | 
+[12:45:24]  ======================================= 
+[12:45:24]  
+[12:45:24]  
+[12:45:24]  
+[12:45:24] 
+----------------------------------
+[12:45:24]  Iniciando GM test de Roleplay.
+[12:45:24] ----------------------------------
+
+[12:45:24] Number of vehicle models: 0
+[12:45:25] [connection] 192.168.0.15:56315 requests connection cookie.
+[12:45:26] [connection] incoming connection: 192.168.0.15:56315 id: 0
+[12:45:28] [connection] 127.0.0.1:53286 requests connection cookie.
+[12:45:29] [connection] incoming connection: 127.0.0.1:53286 id: 0
+[12:45:30] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[12:45:36] [connection] incoming connection: 192.168.0.15:56316 id: 1
+[12:46:04] [connection] 192.168.0.15:63707 requests connection cookie.
+[12:46:05] [connection] incoming connection: 192.168.0.15:63707 id: 1
+[12:46:06] [join] Rosa_Rodwood has joined the server (1:192.168.0.15)
+[12:46:21] [CMD] [Lawliet Salvatore]: /tp 0
+[12:46:24] [CMD] [Lawliet Salvatore]: /adminduty
+[12:46:26] [CMD] [Lawliet Salvatore]: /tp 0
+[12:46:28] [CMD] [Lawliet Salvatore]: /tp 1
+[12:46:35] [CMD] [Lawliet Salvatore]: /contratar 1
+[12:46:40] [CMD] [Lawliet Salvatore]: /facciones
+[12:46:53] [CMD] [Lawliet Salvatore]: /darfacc 0 1
+[12:46:56] [CMD] [Lawliet Salvatore]: /facciones
+[12:47:01] [CMD] [Lawliet Salvatore]: /contratar 1
+[12:47:20] [CMD] [Lawliet Salvatore]: /contratar 1
+[12:47:35] [CMD] [Lawliet Salvatore]: /contratar 1
+[12:49:51] [part] Rosa_Rodwood has left the server (1:1)
+[12:50:28] [part] Lawliet_Salvatore has left the server (0:1)

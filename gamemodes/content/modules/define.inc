@@ -10,6 +10,7 @@
 
 //Dialogos
 #define					KEY_DIALOG					(7)
+#define                 ContractDialog              (8)
 
 //ID staff
 #define					Usuario						(0)
@@ -27,6 +28,7 @@
 
 //Sistema de facciones
 #define					MAX_FACTIONS				(15)
+#define                 MAX_FMEMBER                 (10)
 new COUNT_FACTIONS = 0;
 #define					MiembroF					(1)
 #define					CapitanF					(2)

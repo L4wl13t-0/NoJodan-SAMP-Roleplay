@@ -22,6 +22,7 @@ public LoadUser_data(playerid, name[], value[])
 	INI_Int("Interior", pInfo[playerid][Interior]);
 	INI_Int("Faction", pInfo[playerid][Faction]);
 	INI_Int("FactionRol", pInfo[playerid][FactionRol]);
+	INI_Int("fInvite", pInfo[playerid][fInvite]);
 	for(new i = 0; i < 13; i++)
 	{
 		new wInfo[24], aInfo[24];
@@ -67,6 +68,7 @@ public SaveUser_Data(playerid)
 		INI_WriteInt(File, "Interior", pInfo[playerid][Interior]);
 		INI_WriteInt(File, "Faction", pInfo[playerid][Faction]);
 		INI_WriteInt(File, "FactionRol", pInfo[playerid][FactionRol]);
+		INI_WriteInt(File, "fInvite", pInfo[playerid][fInvite]);
 		for(new i = 0; i < 13; i++)
 		{
 			new wInfo[24], aInfo[24];

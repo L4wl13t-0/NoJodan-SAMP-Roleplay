@@ -11,20 +11,12 @@ CMD:crearfacc(playerid, params[])
 			INI_SetTag(File, "Faction Data");
 			INI_WriteString(File, "Name", params);
 			INI_WriteString(File, "Leader", "Ninguno");
-			INI_WriteString(File, "Coleader1", "Ninguno");
-			INI_WriteString(File, "Coleader2", "Ninguno");
-			INI_WriteString(File, "Captain1", "Ninguno");
-			INI_WriteString(File, "Captain2", "Ninguno");
-			INI_WriteString(File, "Member1", "Ninguno");
-			INI_WriteString(File, "Member2", "Ninguno");
-			INI_WriteString(File, "Member3", "Ninguno");
-			INI_WriteString(File, "Member4", "Ninguno");
-			INI_WriteString(File, "Member5", "Ninguno");
 			INI_WriteFloat(File, "ExteriorX", 0);
 			INI_WriteFloat(File, "ExteriorY",0);
 			INI_WriteFloat(File, "ExteriorZ", 0);
 			INI_WriteInt(File, "Money", 50000);
 			INI_WriteInt(File, "Pay", 25000);
+			INI_WriteInt(File, "MembersC", 1);
 			INI_Close(File);
 			SendClientMessage(playerid, COLOR_WHITE, "Faccion creada.");
 			COUNT_FACTIONS++;
@@ -75,6 +67,7 @@ CMD:darfacc(playerid, params[])
 				pInfo[params[0]][FactionRol] = LiderF;
 				GetPlayerName(params[0], fInfo[params[1]][Leader], MAX_PLAYER_NAME);
 				SaveFaction_data(params[1]);
+				SaveUser_Data(params[0]);
 				SendClientMessage(playerid, COLOR_GREEN, "Acabas de asignar una faccion.");
 				SendClientMessage(params[0], COLOR_GREEN, "Te acaban de asignar a una faccion.");
             }
@@ -135,9 +128,40 @@ CMD:editarfacc(playerid, params[])
 
 CMD:contratar(playerid, params[])
 {
-	if(pInfo[playerid][FactionRol] > CaptainF)
+	if(pInfo[playerid][FactionRol] >= ColiderF)
 	{
-		//
+		if(!sscanf(params, "d", params[0]))
+		{
+			if(fInfo[pInfo[playerid][Faction]][MembersC] == MAX_FMEMBER)		return 	SendClientMessage(playerid, COLOR_RED, "No puedes invitar a nadie mas, faccion llena.");
+			if(IsPlayerConnected(params[0]))
+			{
+				if(ProxDetectorS(8.0, playerid, params[0]))
+				{
+					if(params[0] == playerid) 		return	SendClientMessage(playerid, COLOR_RED, "No puedes invitarte a ti mismo.");
+					if(pInfo[params[0]][Faction] != 0)		return	SendClientMessage(playerid, COLOR_RED, "El jugador ya se encuentra en una faccion.");
+
+					pInfo[params[0]][fInvite] = pInfo[playerid][Faction];
+					SendClientMessage(playerid, COLOR_GREEN, "Enviaste una oferta.");
+					ShowPlayerDialog(params[0], ContractDialog, DIALOG_STYLE_MSGBOX, "Oferta de trabajo", "Te ofrecieron un contrato, ¿Quieres aceptarlo y pertenecer a esta organizacion?", "Aceptar", "Rechazar");
+				}
+				else
+				{
+					SendClientMessage(playerid, COLOR_RED, "El jugador no esta cerca.");
+				}
+			}
+			else
+			{
+				SendClientMessage(playerid, COLOR_RED, "El jugador no esta conectado.");
+			}
+		}
+		else
+		{
+			SendClientMessage(playerid, COLOR_GREEN, "Uso: /contratar <ID>");
+		}
+	}
+	else
+	{
+		SendClientMessage(playerid, COLOR_RED, "No eres lider de una faccion para realizar esto.");
 	}
 	return 1;
 }

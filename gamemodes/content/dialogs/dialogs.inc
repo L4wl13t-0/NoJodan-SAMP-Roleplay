@@ -43,6 +43,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					INI_WriteInt(File, "Interior", 0);
 					INI_WriteInt(File, "Faction", 0);
 					INI_WriteInt(File, "FactionRol", 0);
+					INI_WriteInt(File, "fInvite", 0);
 					INI_Close(File);
 
 					ShowPlayerDialog(playerid, RegisterAge, DIALOG_STYLE_INPUT, ""COLOR_WHITE_T"Edad",""COLOR_WHITE_T"Ahora necesitamos que nos digas tu edad:", "Siguiente", "Cancelar");
@@ -123,6 +124,25 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SetPlayerSkin(playerid, 56);
 				GivePlayerMoney(playerid, 15000);
 				SpawnPlayer(playerid);
+			}
+			return 1;
+		}
+		case ContractDialog:
+		{
+			if(response == 1)
+			{
+				pInfo[playerid][Faction] = pInfo[playerid][fInvite];
+				pInfo[playerid][FactionRol] = MiembroF;
+				fInfo[pInfo[playerid][fInvite]][MembersC]++;
+				pInfo[playerid][fInvite] = 0;
+				SaveFaction_data(pInfo[playerid][Faction]);
+				SaveUser_Data(playerid);
+				SendClientMessage(playerid, COLOR_GREEN, "Acabas de unirte a una faccion.");
+			}
+			else
+			{
+				pInfo[playerid][fInvite] = 0;
+				SendClientMessage(playerid, COLOR_GREEN, "Rechazaste la oferta.");
 			}
 			return 1;
 		}
