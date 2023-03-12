@@ -165,3 +165,175 @@ CMD:contratar(playerid, params[])
 	}
 	return 1;
 }
+
+CMD:despedir(playerid, params[])
+{
+	if(pInfo[playerid][FactionRol] >= ColiderF)
+	{
+		if(!sscanf(params, "d", params[0]))
+		{
+			if(!IsPlayerConnected(params[0]))		return 		SendClientMessage(playerid, COLOR_RED, "El jugador no esta conectado.");
+			if(pInfo[params[0]][Faction] != pInfo[playerid][Faction])		return 		SendClientMessage(playerid, COLOR_RED, "El jugador no esta en tu faccion.");
+			if(pInfo[params[0]][FactionRol] > pInfo[playerid][FactionRol])		return 		SendClientMessage(playerid, COLOR_RED, "No puedes expulsar a tu lider.");
+			if(params[0] == playerid) 		return	SendClientMessage(playerid, COLOR_RED, "No puedes expulsarte a ti mismo.");
+
+			pInfo[params[0]][Faction] = 0;
+			pInfo[params[0]][FactionRol] = 0;
+			fInfo[pInfo[playerid][Faction]][MembersC]--;
+			SaveFaction_data(pInfo[params[0]][Faction]);
+			SaveUser_Data(params[0]);
+			SendClientMessage(params[0], COLOR_GREEN, "El lider te ha echado de la faccion.");
+			SendClientMessage(playerid, COLOR_GREEN, "Despediste a un jugador.");
+		}
+		else
+		{
+			SendClientMessage(playerid, COLOR_GREEN, "Uso: /despedir <ID>");
+		}
+	}
+	else
+	{
+		SendClientMessage(playerid, COLOR_RED, "No eres lider de una faccion para realizar esto.");
+	}
+	return 1;
+}
+
+CMD:darrango(playerid, params[])
+{
+	if(pInfo[playerid][FactionRol] >= ColiderF)
+	{
+		new rango[32];
+		if(!sscanf(params, "ds[32]", params[0], rango))
+		{
+			if(!IsPlayerConnected(params[0]))		return 		SendClientMessage(playerid, COLOR_RED, "El jugador no esta conectado.");
+			if(pInfo[params[0]][Faction] != pInfo[playerid][Faction])		return 		SendClientMessage(playerid, COLOR_RED, "El jugador no esta en tu faccion.");
+			if(pInfo[params[0]][FactionRol] > pInfo[playerid][FactionRol])		return 		SendClientMessage(playerid, COLOR_RED, "No puedes cambiar el rango de tu lider.");
+			if(params[0] == playerid) 		return	SendClientMessage(playerid, COLOR_RED, "No puedes cambiar tu mismo rango.");
+
+			if(!strcmp(rango, "miembro", true))
+			{
+				pInfo[params[0]][FactionRol] = MiembroF;
+				SaveUser_Data(params[0]);
+				SendClientMessage(params[0], COLOR_GREEN, "El lider te ha dado rol Miembro.");
+				SendClientMessage(playerid, COLOR_GREEN, "Cambiaste el rol a un jugador.");
+			}
+			else if(!strcmp(rango, "capitan", true))
+			{
+				pInfo[params[0]][FactionRol] = CapitanF;
+				SaveUser_Data(params[0]);
+				SendClientMessage(params[0], COLOR_GREEN, "El lider te ha dado rol Capitan.");
+				SendClientMessage(playerid, COLOR_GREEN, "Cambiaste el rol a un jugador.");
+			}
+			else if(!strcmp(rango, "colider", true))
+			{
+				pInfo[params[0]][FactionRol] = ColiderF;
+				SaveUser_Data(params[0]);
+				SendClientMessage(params[0], COLOR_GREEN, "El lider te ha dado rol Colider.");
+				SendClientMessage(playerid, COLOR_GREEN, "Cambiaste el rol a un jugador.");
+			}
+			else
+			{
+				SendClientMessage(playerid, COLOR_GREEN, "Uso: /darrango <ID> <Miembro - Capitan - Colider>");
+			}
+		}
+		else
+		{
+			SendClientMessage(playerid, COLOR_GREEN, "Uso: /darrango <ID> <Miembro - Capitan - Colider>");
+		}
+	}
+	else
+	{
+		SendClientMessage(playerid, COLOR_RED, "No eres lider de una faccion para realizar esto.");
+	}
+	return 1;
+}
+
+CMD:retirarfondos(playerid,params[])
+{
+	if(pInfo[playerid][FactionRol] >= ColiderF)
+	{
+		if(!sscanf(params, "d", params[0]))
+		{
+			if(fInfo[pInfo[playerid][Faction]][Money] < params[0]) 		return  	SendClientMessage(playerid, COLOR_RED, "Fondos insuficientes.");
+
+			pInfo[playerid][Money] += params[0];
+			GivePlayerMoney(playerid, pInfo[playerid][Money]);
+			fInfo[pInfo[playerid][Faction]][Money] -= params[0];
+			SaveFaction_data(pInfo[playerid][Faction]);
+			SendClientMessage(playerid, COLOR_GREEN, "Retiraste una cantidad de dinero de la faccion");
+		}
+		else
+		{
+			SendClientMessage(playerid, COLOR_GREEN, "Uso: /retirarfondos <Cantidad>");
+		}
+	}
+	else
+	{
+		SendClientMessage(playerid, COLOR_RED, "No eres lider de una faccion para realizar esto.");
+	}
+	return 1;
+}
+
+CMD:anadirfondos(playerid, params[])
+{
+	if(pInfo[playerid][FactionRol] >= ColiderF)
+	{
+		if(!sscanf(params, "d", params[0]))
+		{
+			if(pInfo[playerid][Money] < params[0]) 		return  	SendClientMessage(playerid, COLOR_RED, "Fondos insuficientes.");
+
+			pInfo[playerid][Money] -= params[0];
+			GivePlayerMoney(playerid, -params[0]);
+			fInfo[pInfo[playerid][Faction]][Money] += params[0];
+			SaveFaction_data(pInfo[playerid][Faction]);
+			SendClientMessage(playerid, COLOR_GREEN, "Añadiste una cantidad de dinero de la faccion");
+		}
+		else
+		{
+			SendClientMessage(playerid, COLOR_GREEN, "Uso: /anadirfondos <Cantidad>");
+		}
+	}
+	else
+	{
+		SendClientMessage(playerid, COLOR_RED, "No eres lider de una faccion para realizar esto.");
+	}
+	return 1;
+}
+
+CMD:infofacc(playerid, params[])
+{
+	if(pInfo[playerid][Faction] != 0)
+	{
+		new info[1200], miembros[500], capitanes[500], coliders[500], string[64];
+		for(new i = 0; i < MAX_PLAYERS; i++)
+		{
+			if (IsPlayerConnected(i))
+			{
+				if(pInfo[i][Faction] == pInfo[playerid][Faction])
+				{
+					if(pInfo[i][FactionRol] == MiembroF)
+					{
+						format(string, sizeof(string), "%s - ", GetPlayerNameEx(i));
+						strcat(miembros, string);
+					}
+					if(pInfo[i][FactionRol] == CapitanF)
+					{
+						format(string, sizeof(string), "%s - ", GetPlayerNameEx(i));
+						strcat(capitanes, string);
+					}
+					if(pInfo[i][FactionRol] == ColiderF)
+					{
+						format(string, sizeof(string), "%s - ", GetPlayerNameEx(i));
+						strcat(coliders, string);
+					}
+				}
+			}
+		}
+		format(info, sizeof(info), "Lider: %s\n\nMiembros conectados:\n\nColideres: %s\n\nCapitanes: %s\n\nMiembros: %s\n\nDinero: %d", fInfo[pInfo[playerid][Faction]][Leader], coliders, capitanes, miembros, fInfo[pInfo[playerid][Faction]][Money]);
+		ShowPlayerDialog(playerid, KEY_DIALOG, DIALOG_STYLE_MSGBOX, fInfo[pInfo[playerid][Faction]][Name], info, "Cerrar", "");
+	}
+	else
+	{
+		SendClientMessage(playerid, COLOR_RED, "No estas en una faccion para realizar esto.");
+	}
+	return 1;
+}
