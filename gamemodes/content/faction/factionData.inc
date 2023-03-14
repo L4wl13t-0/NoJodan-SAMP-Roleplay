@@ -6,6 +6,9 @@ enum FactionData
 	Float:ExteriorPos[3],
 	Money,
 	Pay,
-	MembersC
+	MembersC,
+	Pickup,
+	PickupID,
+	Text3D:LabelID
 };
 new fInfo[MAX_FACTIONS][FactionData];

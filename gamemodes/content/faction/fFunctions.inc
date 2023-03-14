@@ -10,6 +10,8 @@ public LoadFaction_data(factionid, name[], value[])
 	INI_Int("Money", fInfo[factionid][Money]);
 	INI_Int("Pay", fInfo[factionid][Pay]);
 	INI_Int("MembersC", fInfo[factionid][MembersC]);
+	INI_Int("Pickup", fInfo[factionid][Pickup]);
+	INI_Int("PickupID", fInfo[factionid][PickupID]);
 	return 1;
 }
 
@@ -29,6 +31,8 @@ public SaveFaction_data(factionid)
 		INI_WriteInt(File, "Money", fInfo[factionid][Money]);
 		INI_WriteInt(File, "Pay", fInfo[factionid][Pay]);
 		INI_WriteInt(File, "MembersC", fInfo[factionid][MembersC]);
+		INI_WriteInt(File, "Pickup", fInfo[factionid][Pickup]);
+		INI_WriteInt(File, "PickupID", fInfo[factionid][PickupID]);
 		INI_Close(File);
 	}
 	return 1;

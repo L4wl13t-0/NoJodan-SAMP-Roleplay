@@ -62,11 +62,16 @@ public ProxDetectorS(Float:radi, playerid, targetid)
 LoadFaction_DataInit()
 {
 	COUNT_FACTIONS = getFactionNum();
+	new string[128];
 	if(COUNT_FACTIONS > 0)
 	{
 		for(new i = 1; i <= COUNT_FACTIONS; i++)
 		{
 			INI_ParseFile(FactionPath(i), "LoadFaction_data", .bExtra = true, .extra = i);
+			fInfo[i][PickupID] = CreateDynamicPickup(fInfo[i][Pickup], 0, fInfo[i][ExteriorPos][0], fInfo[i][ExteriorPos][1], fInfo[i][ExteriorPos][2], 0, 0);
+			format(string, sizeof(string), "Faccion: %s\nID: %d", fInfo[i][Name], i);
+			fInfo[i][LabelID] = CreateDynamic3DTextLabel(string, COLOR_WHITE, fInfo[i][ExteriorPos][0], fInfo[i][ExteriorPos][1], fInfo[i][ExteriorPos][2], 20.0);
+			SaveFaction_data(i);
 		}
 	}
 	return 1;

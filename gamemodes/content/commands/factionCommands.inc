@@ -7,20 +7,27 @@ CMD:crearfacc(playerid, params[])
 		//new factionNum = getFactionNum();
 		if(COUNT_FACTIONS < MAX_FACTIONS)
 		{
+			new pickupid = CreateDynamicPickup(1274, 0, -2016.4399, -79.77140, 35.3203, 0, 0);
 			new INI:File = INI_Open(FactionPath(COUNT_FACTIONS+1));
 			INI_SetTag(File, "Faction Data");
 			INI_WriteString(File, "Name", params);
 			INI_WriteString(File, "Leader", "Ninguno");
-			INI_WriteFloat(File, "ExteriorX", 0);
-			INI_WriteFloat(File, "ExteriorY",0);
-			INI_WriteFloat(File, "ExteriorZ", 0);
+			INI_WriteFloat(File, "ExteriorX", -2016.4399);
+			INI_WriteFloat(File, "ExteriorY", -79.77140);
+			INI_WriteFloat(File, "ExteriorZ", 35.3203);
 			INI_WriteInt(File, "Money", 50000);
 			INI_WriteInt(File, "Pay", 25000);
 			INI_WriteInt(File, "MembersC", 1);
+			INI_WriteInt(File, "Pickup", 1274);
+			INI_WriteInt(File, "PickupID", pickupid);
 			INI_Close(File);
+
 			SendClientMessage(playerid, COLOR_WHITE, "Faccion creada.");
 			COUNT_FACTIONS++;
 			INI_ParseFile(FactionPath(COUNT_FACTIONS), "LoadFaction_data", .bExtra = true, .extra = COUNT_FACTIONS);
+			new string[128];
+			format(string, sizeof(string), "Faccion: %s\nID: %d", params, COUNT_FACTIONS);
+			fInfo[COUNT_FACTIONS][LabelID] = CreateDynamic3DTextLabel(string, COLOR_WHITE, -2016.4399, -79.77140, 35.3203, 20.0);
 		}
 		else
 		{
@@ -92,31 +99,50 @@ CMD:editarfacc(playerid, params[])
 {
 	if(pInfo[playerid][Admin] > Moderador && pInfo[playerid][OnDuty] == 1)
     {
-		new option[64];
-        if(!sscanf(params, "ds[64]d", params[0], option, params[2]))
+		new option[64], faccID;
+        if(!sscanf(params, "ds[64]", faccID, option))
         {
-			if(!strcmp(option, "dinero", true))
+			if(!sscanf(params, "ds[64]d", faccID, option, params[2]))
 			{
-				fInfo[params[0]][Money] = params[2];
-				SaveFaction_data(params[0]);
-				SendClientMessage(playerid, COLOR_GREEN, "Acabas de editar una faccion.");
-				return 1;
+				if(!strcmp(option, "dinero", true))
+				{
+					fInfo[faccID][Money] = params[2];
+					SaveFaction_data(faccID);
+					SendClientMessage(playerid, COLOR_GREEN, "Acabas de editar una faccion.");
+					return 1;
+				}
+				else if(!strcmp(option, "paga", true))
+				{
+					fInfo[faccID][Pay] = params[2];
+					SaveFaction_data(faccID);
+					SendClientMessage(playerid, COLOR_GREEN, "Acabas de editar una faccion.");
+					return 1;
+				}
+				else
+				{
+					SendClientMessage(playerid, COLOR_GREEN, "Uso: /editarfacc <Faccion ID> <Dinero - Paga - Exterior> <Valor (Opcional)>");
+				}
 			}
-			else if(!strcmp(option, "paga", true))
+			else if(!strcmp(option, "exterior", true))
 			{
-				fInfo[params[0]][Pay] = params[2];
-				SaveFaction_data(params[0]);
+				GetPlayerPos(playerid, fInfo[faccID][ExteriorPos][0], fInfo[faccID][ExteriorPos][1], fInfo[faccID][ExteriorPos][2]);
+				DestroyDynamicPickup(fInfo[faccID][PickupID]);
+				DestroyDynamic3DTextLabel(fInfo[faccID][LabelID]);
+				fInfo[faccID][PickupID] = CreateDynamicPickup(fInfo[faccID][Pickup], 0, fInfo[faccID][ExteriorPos][0], fInfo[faccID][ExteriorPos][1], fInfo[faccID][ExteriorPos][2], 0, 0);
+				new string[128];
+				format(string, sizeof(string), "Faccion: %s\nID: %d", fInfo[faccID][Name], faccID);
+				fInfo[faccID][LabelID] = CreateDynamic3DTextLabel(string, COLOR_WHITE, fInfo[faccID][ExteriorPos][0], fInfo[faccID][ExteriorPos][1], fInfo[faccID][ExteriorPos][2], 20.0);
+				SaveFaction_data(faccID);
 				SendClientMessage(playerid, COLOR_GREEN, "Acabas de editar una faccion.");
-				return 1;
 			}
 			else
 			{
-				SendClientMessage(playerid, COLOR_GREEN, "Uso: /editarfacc <Faccion ID> <Dinero - Paga> <Valor>");
+				SendClientMessage(playerid, COLOR_GREEN, "Uso: /editarfacc <Faccion ID> <Dinero - Paga - Exterior> <Valor (Opcional)>");
 			}
         }
         else
         {
-            SendClientMessage(playerid, COLOR_GREEN, "Uso: /editarfacc <Faccion ID> <Dinero - Paga> <Valor>");
+            SendClientMessage(playerid, COLOR_GREEN, "Uso: /editarfacc <Faccion ID> <Dinero - Paga Exterior> <Valor (Opcional)>");
         }
     }
     else
