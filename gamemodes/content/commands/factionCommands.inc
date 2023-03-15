@@ -7,7 +7,7 @@ CMD:crearfacc(playerid, params[])
 		//new factionNum = getFactionNum();
 		if(COUNT_FACTIONS < MAX_FACTIONS)
 		{
-			new pickupid = CreateDynamicPickup(1274, 0, -2016.4399, -79.77140, 35.3203, 0, 0);
+			new pickupid = CreatePickup(1274, 1, -2016.4399, -79.77140, 35.3203, 0);
 			new INI:File = INI_Open(FactionPath(COUNT_FACTIONS+1));
 			INI_SetTag(File, "Faction Data");
 			INI_WriteString(File, "Name", params);
@@ -118,17 +118,25 @@ CMD:editarfacc(playerid, params[])
 					SendClientMessage(playerid, COLOR_GREEN, "Acabas de editar una faccion.");
 					return 1;
 				}
+				else if(!strcmp(option, "pickup", true))
+				{
+					fInfo[faccID][Pickup] = params[2];
+					DestroyPickup(fInfo[faccID][PickupID]);
+					fInfo[faccID][PickupID] = CreatePickup(fInfo[faccID][Pickup], 1, fInfo[faccID][ExteriorPos][0], fInfo[faccID][ExteriorPos][1], fInfo[faccID][ExteriorPos][2], 0);
+					SaveFaction_data(faccID);
+					SendClientMessage(playerid, COLOR_GREEN, "Acabas de editar una faccion.");
+				}
 				else
 				{
-					SendClientMessage(playerid, COLOR_GREEN, "Uso: /editarfacc <Faccion ID> <Dinero - Paga - Exterior> <Valor (Opcional)>");
+					SendClientMessage(playerid, COLOR_GREEN, "Uso: /editarfacc <Faccion ID> <Dinero - Paga - Exterior - Pickup> <Valor (Opcional)>");
 				}
 			}
 			else if(!strcmp(option, "exterior", true))
 			{
 				GetPlayerPos(playerid, fInfo[faccID][ExteriorPos][0], fInfo[faccID][ExteriorPos][1], fInfo[faccID][ExteriorPos][2]);
-				DestroyDynamicPickup(fInfo[faccID][PickupID]);
+				DestroyPickup(fInfo[faccID][PickupID]);
 				DestroyDynamic3DTextLabel(fInfo[faccID][LabelID]);
-				fInfo[faccID][PickupID] = CreateDynamicPickup(fInfo[faccID][Pickup], 0, fInfo[faccID][ExteriorPos][0], fInfo[faccID][ExteriorPos][1], fInfo[faccID][ExteriorPos][2], 0, 0);
+				fInfo[faccID][PickupID] = CreatePickup(fInfo[faccID][Pickup], 1, fInfo[faccID][ExteriorPos][0], fInfo[faccID][ExteriorPos][1], fInfo[faccID][ExteriorPos][2], 0);
 				new string[128];
 				format(string, sizeof(string), "Faccion: %s\nID: %d", fInfo[faccID][Name], faccID);
 				fInfo[faccID][LabelID] = CreateDynamic3DTextLabel(string, COLOR_WHITE, fInfo[faccID][ExteriorPos][0], fInfo[faccID][ExteriorPos][1], fInfo[faccID][ExteriorPos][2], 20.0);
@@ -142,7 +150,7 @@ CMD:editarfacc(playerid, params[])
         }
         else
         {
-            SendClientMessage(playerid, COLOR_GREEN, "Uso: /editarfacc <Faccion ID> <Dinero - Paga Exterior> <Valor (Opcional)>");
+            SendClientMessage(playerid, COLOR_GREEN, "Uso: /editarfacc <Faccion ID> <Dinero - Paga - Exterior - Pickup> <Valor (Opcional)>");
         }
     }
     else
