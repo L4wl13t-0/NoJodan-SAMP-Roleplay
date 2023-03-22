@@ -208,17 +208,41 @@ CMD:traer(playerid, params[])
     return 1;
 }
 
-CMD:mandarpos(playerid, params[])
+CMD:irpos(playerid, params[])
 {
 	if(pInfo[playerid][Admin] >= Moderador && pInfo[playerid][OnDuty] == 1)
 	{
-		if(!sscanf(params, "dfff", params[0], params[1], params[2], params[3]))
+        new Float:x, Float:y, Float:z;
+		if(!sscanf(params, "fff", x, y, z))
+		{
+			new string[128];
+			SetPlayerPos(playerid, x, y, z);
+			format(string, sizeof(string), "Has ido a las cordenadas %f, %f, %f.", x, y, z);
+			SendClientMessage(playerid, COLOR_GREEN, string);
+		}
+		else
+		{
+			SendClientMessage(playerid, COLOR_GREEN, "Uso: /irpos <PosX> <PosY> <PosZ>");
+		}
+	}
+	else
+    {
+        SendClientMessage(playerid, COLOR_RED, "No estas en modo administrador o no tienes permisos para esto.");
+    }
+    return 1;
+}
+
+CMD:mandarinterior(playerid, params[])
+{
+	if(pInfo[playerid][Admin] >= Moderador && pInfo[playerid][OnDuty] == 1)
+	{
+		if(!sscanf(params, "dd", params[0], params[1]))
 		{
 			if(IsPlayerConnected(params[0]))
 			{
 				new string[128];
-				SetPlayerPos(params[0], params[1], params[2], params[3]);
-				format(string, sizeof(string), "Has mandado la id %i a las cordenadas %f, %f, %f.", params[0], params[1], params[2], params[3]);
+				SetPlayerInterior(params[0], params[1]);
+				format(string, sizeof(string), "Has mandado la id %d al interior %d.", params[0], params[1]);
 				SendClientMessage(playerid, COLOR_GREEN, string);
 			}
 			else
@@ -228,7 +252,37 @@ CMD:mandarpos(playerid, params[])
 		}
 		else
 		{
-			SendClientMessage(playerid, COLOR_GREEN, "Uso: /mandarpos <ID> <PosX> <PosY> <PosZ>");
+			SendClientMessage(playerid, COLOR_GREEN, "Uso: /mandarinterior <ID> <InteriorID>");
+		}
+	}
+	else
+    {
+        SendClientMessage(playerid, COLOR_RED, "No estas en modo administrador o no tienes permisos para esto.");
+    }
+    return 1;
+}
+
+CMD:mandarvw(playerid, params[])
+{
+	if(pInfo[playerid][Admin] >= Moderador && pInfo[playerid][OnDuty] == 1)
+	{
+		if(!sscanf(params, "dd", params[0], params[1]))
+		{
+			if(IsPlayerConnected(params[0]))
+			{
+				new string[128];
+				SetPlayerVirtualWorld(params[0], params[1]);
+				format(string, sizeof(string), "Has mandado la id %d al virtual world %d.", params[0], params[1]);
+				SendClientMessage(playerid, COLOR_GREEN, string);
+			}
+			else
+			{
+				SendClientMessage(playerid, COLOR_RED, "El jugador no esta conectado");
+			}
+		}
+		else
+		{
+			SendClientMessage(playerid, COLOR_GREEN, "Uso: /mandarinterior <ID> <InteriorID>");
 		}
 	}
 	else

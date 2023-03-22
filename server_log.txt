@@ -7763,3 +7763,171 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 
 *** Streamer Plugin v2.9.5 by Incognito unloaded ***
 
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:32:09] filterscripts = ""  (string)
+[16:32:09] 
+[16:32:09] Server Plugins
+[16:32:09] --------------
+[16:32:09]  Loading plugin: sscanf
+[16:32:09] 
+
+[16:32:09]  ===============================
+
+[16:32:09]       sscanf plugin loaded.     
+
+[16:32:09]          Version:  2.8.3        
+
+[16:32:09]   (c) 2018 Alex "Y_Less" Cole  
+
+[16:32:09]  ===============================
+
+[16:32:09]   Loaded.
+[16:32:09]  Loading plugin: streamer
+[16:32:09] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[16:32:09]   Loaded.
+[16:32:09]  Loaded 2 plugins.
+
+[16:32:09] 
+[16:32:09] Filterscripts
+[16:32:09] ---------------
+[16:32:09]   Loaded 0 filterscripts.
+
+[16:32:09]  
+[16:32:09]  
+[16:32:09]  
+[16:32:09]  ======================================= 
+[16:32:09]  |                                     | 
+[16:32:09]  |        YSI version 3.09.0684        | 
+[16:32:09]  |        By Alex "Y_Less" Cole        | 
+[16:32:09]  |                                     | 
+[16:32:09]  ======================================= 
+[16:32:09]  
+[16:32:09]  
+[16:32:09]  
+[16:32:09] 
+----------------------------------
+[16:32:09]  Iniciando GM test de Roleplay.
+[16:32:09] ----------------------------------
+
+[16:32:09] Number of vehicle models: 0
+[16:32:28] [connection] 127.0.0.1:64123 requests connection cookie.
+[16:32:29] [connection] incoming connection: 127.0.0.1:64123 id: 0
+[16:32:29] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[16:32:37] [CMD] [Lawliet Salvatore]: /adminduty
+[16:32:40] [CMD] [Lawliet Salvatore]: /irfacc 1
+[16:32:44] [CMD] [Lawliet Salvatore]: /irfacc  2
+[16:32:51] [CMD] [Lawliet Salvatore]: /editarfacc
+[16:34:25] [CMD] [Lawliet Salvatore]: /mandarinterior
+[16:34:32] [CMD] [Lawliet Salvatore]: /mandarinterior 0 3
+[16:34:41] [CMD] [Lawliet Salvatore]: /mandarpos
+[16:35:11] [CMD] [Lawliet Salvatore]: /mandarpos 0 385 174 1008
+[16:35:36] [part] Lawliet_Salvatore has left the server (0:1)
+[16:42:13] --- Server Shutting Down.
+[16:42:13] 
+
+[16:42:13]  ===============================
+
+[16:42:13]      sscanf plugin unloaded.    
+
+[16:42:13]  ===============================
+
+[16:42:13] 
+
+*** Streamer Plugin v2.9.5 by Incognito unloaded ***
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:43:14] filterscripts = ""  (string)
+[16:43:14] 
+[16:43:14] Server Plugins
+[16:43:14] --------------
+[16:43:14]  Loading plugin: sscanf
+[16:43:14] 
+
+[16:43:14]  ===============================
+
+[16:43:14]       sscanf plugin loaded.     
+
+[16:43:14]          Version:  2.8.3        
+
+[16:43:14]   (c) 2018 Alex "Y_Less" Cole  
+
+[16:43:14]  ===============================
+
+[16:43:14]   Loaded.
+[16:43:14]  Loading plugin: streamer
+[16:43:14] 
+
+*** Streamer Plugin v2.9.5 by Incognito loaded ***
+
+[16:43:14]   Loaded.
+[16:43:14]  Loaded 2 plugins.
+
+[16:43:14] 
+[16:43:14] Filterscripts
+[16:43:14] ---------------
+[16:43:14]   Loaded 0 filterscripts.
+
+[16:43:14]  
+[16:43:14]  
+[16:43:14]  
+[16:43:14]  ======================================= 
+[16:43:14]  |                                     | 
+[16:43:14]  |        YSI version 3.09.0684        | 
+[16:43:14]  |        By Alex "Y_Less" Cole        | 
+[16:43:14]  |                                     | 
+[16:43:14]  ======================================= 
+[16:43:14]  
+[16:43:14]  
+[16:43:14]  
+[16:43:14] 
+----------------------------------
+[16:43:14]  Iniciando GM test de Roleplay.
+[16:43:14] ----------------------------------
+
+[16:43:14] Number of vehicle models: 0
+[16:43:33] [connection] 127.0.0.1:63208 requests connection cookie.
+[16:43:34] [connection] incoming connection: 127.0.0.1:63208 id: 0
+[16:43:34] [join] Lawliet_Salvatore has joined the server (0:127.0.0.1)
+[16:43:49] [CMD] [Lawliet Salvatore]: /mandarinterior 0 0
+[16:43:53] [CMD] [Lawliet Salvatore]: /adminduty
+[16:43:54] [CMD] [Lawliet Salvatore]: /mandarinterior 0 0
+[16:44:08] [CMD] [Lawliet Salvatore]: /mandarvw 0 1
+[16:44:23] [CMD] [Lawliet Salvatore]: /mandarinterior 0 3
+[16:44:31] [CMD] [Lawliet Salvatore]: /irpos
+[16:44:49] [CMD] [Lawliet Salvatore]: /irpos 384.8 173.8 1008.38
+[16:45:46] [CMD] [Lawliet Salvatore]: /editarfacc
+[16:45:48] [CMD] [Lawliet Salvatore]: /facciones
+[16:45:58] [CMD] [Lawliet Salvatore]: /editarfacc 2 Interior
+[16:46:29] [part] Lawliet_Salvatore has left the server (0:1)
+[16:47:27] --- Server Shutting Down.
+[16:47:28] 
+
+[16:47:28]  ===============================
+
+[16:47:28]      sscanf plugin unloaded.    
+
+[16:47:28]  ===============================
+
+[16:47:28] 
+
+*** Streamer Plugin v2.9.5 by Incognito unloaded ***
+

@@ -147,6 +147,13 @@ CMD:editarfacc(playerid, params[])
 				SaveFaction_data(faccID);
 				SendClientMessage(playerid, COLOR_GREEN, "Acabas de editar una faccion.");
 			}
+			else if(!strcmp(option, "interior", true))
+			{
+				GetPlayerPos(playerid, fInfo[faccID][InteriorPos][0], fInfo[faccID][InteriorPos][1], fInfo[faccID][InteriorPos][2]);
+				fInfo[faccID][InteriorID] = GetPlayerInterior(playerid);
+				SaveFaction_data(faccID);
+				SendClientMessage(playerid, COLOR_GREEN, "Acabas de editar una faccion.");
+			}
 			else
 			{
 				SendClientMessage(playerid, COLOR_GREEN, "Uso: /editarfacc <Faccion ID> <Dinero - Paga - Exterior> <Valor (Opcional)>");
@@ -155,6 +162,29 @@ CMD:editarfacc(playerid, params[])
         else
         {
             SendClientMessage(playerid, COLOR_GREEN, "Uso: /editarfacc <Faccion ID> <Dinero - Paga - Exterior - Pickup> <Valor (Opcional)>");
+        }
+    }
+    else
+    {
+        SendClientMessage(playerid, COLOR_RED, "No estas en modo administrador o no tienes permisos para esto.");
+    }
+    return 1;
+}
+
+CMD:irfacc(playerid, params[])
+{
+    if(pInfo[playerid][Admin] >= Moderador && pInfo[playerid][OnDuty] == 1)
+    {
+        if(!sscanf(params, "d", params[0]))
+        {
+			new string[64];
+            SetPlayerPos(playerid, fInfo[params[0]][ExteriorPos][0], fInfo[params[0]][ExteriorPos][1], fInfo[params[0]][ExteriorPos][2]+0.5);
+			format(string, sizeof(string), "Te has teletransportado a la facc %d", params[0]);
+			SendClientMessage(playerid, COLOR_GREEN, string);
+        }
+        else
+        {
+            SendClientMessage(playerid, COLOR_GREEN, "Uso: /irfacc <Faccion ID>");
         }
     }
     else
