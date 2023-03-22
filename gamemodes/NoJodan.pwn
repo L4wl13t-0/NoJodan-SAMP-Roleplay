@@ -19,12 +19,16 @@
 #include "content/player/pFunctions.inc"
 #include "content/faction/factionData.inc"
 #include "content/faction/fFunctions.inc"
+#include "mapping/removes.inc"
+#include "mapping/factions.inc"
 #include "content/modules/main.inc"
 #include "content/modules/publics.inc"
+#include "content/modules/keystate.inc"
 #include "content/dialogs/dialogs.inc"
 #include "content/commands/rolCommands.inc"
 #include "content/commands/adminCommands.inc"
 #include "content/commands/factionCommands.inc"
+#include "content/commands/doors.inc"
 #include "content/modules/fCore.inc"
 
 //****************************NoJodan Roleplay****************************

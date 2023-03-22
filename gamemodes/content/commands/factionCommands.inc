@@ -15,6 +15,10 @@ CMD:crearfacc(playerid, params[])
 			INI_WriteFloat(File, "ExteriorX", -2016.4399);
 			INI_WriteFloat(File, "ExteriorY", -79.77140);
 			INI_WriteFloat(File, "ExteriorZ", 35.3203);
+			INI_WriteFloat(File, "InteriorX", 1412.639892);
+			INI_WriteFloat(File, "InteriorY", -1.787510);
+			INI_WriteFloat(File, "InteriorZ", 1000.924377);
+			INI_WriteInt(File, "InteriorID", 18);
 			INI_WriteInt(File, "Money", 50000);
 			INI_WriteInt(File, "Pay", 25000);
 			INI_WriteInt(File, "MembersC", 1);

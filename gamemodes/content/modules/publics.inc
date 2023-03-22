@@ -11,6 +11,7 @@ public OnGameModeInit()
 	SetWorldTime(11);
 	UsePlayerPedAnims();
 	LoadFaction_DataInit();
+	LoadFactions_Maps();
 	return 1;
 }
 
@@ -25,6 +26,7 @@ public OnGameModeExit()
 public OnPlayerConnect(playerid)
 {
 	SetPlayerColor(playerid, COLOR_USUARIO);
+	RemoveMaps(playerid);
 	if(fexist(UserPath(playerid))) //Verificamos si el usuario existe
 	{
 		INI_ParseFile(UserPath(playerid), "LoadUser_%s", .bExtra = true, .extra = playerid);

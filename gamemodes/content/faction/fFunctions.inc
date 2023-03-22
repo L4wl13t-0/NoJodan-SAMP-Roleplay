@@ -7,6 +7,10 @@ public LoadFaction_data(factionid, name[], value[])
 	INI_Float("ExteriorX", fInfo[factionid][ExteriorPos][0]);
 	INI_Float("ExteriorY", fInfo[factionid][ExteriorPos][1]);
 	INI_Float("ExteriorZ", fInfo[factionid][ExteriorPos][2]);
+	INI_Float("InteriorX", fInfo[factionid][InteriorPos][0]);
+	INI_Float("InteriorY", fInfo[factionid][InteriorPos][1]);
+	INI_Float("InteriorZ", fInfo[factionid][InteriorPos][2]);
+	INI_Int("InteriorID", fInfo[factionid][InteriorID]);
 	INI_Int("Money", fInfo[factionid][Money]);
 	INI_Int("Pay", fInfo[factionid][Pay]);
 	INI_Int("MembersC", fInfo[factionid][MembersC]);
@@ -28,6 +32,10 @@ public SaveFaction_data(factionid)
 		INI_WriteFloat(File, "ExteriorX", fInfo[factionid][ExteriorPos][0]);
 		INI_WriteFloat(File, "ExteriorY", fInfo[factionid][ExteriorPos][1]);
 		INI_WriteFloat(File, "ExteriorZ", fInfo[factionid][ExteriorPos][2]);
+		INI_WriteFloat(File, "InteriorX", fInfo[factionid][InteriorPos][0]);
+		INI_WriteFloat(File, "InteriorY", fInfo[factionid][InteriorPos][1]);
+		INI_WriteFloat(File, "InteriorZ", fInfo[factionid][InteriorPos][2]);
+		INI_WriteInt(File, "InteriorID", fInfo[factionid][InteriorID]);
 		INI_WriteInt(File, "Money", fInfo[factionid][Money]);
 		INI_WriteInt(File, "Pay", fInfo[factionid][Pay]);
 		INI_WriteInt(File, "MembersC", fInfo[factionid][MembersC]);
